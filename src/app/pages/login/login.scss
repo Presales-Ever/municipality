@@ -1,0 +1,30 @@
+.login-logo {
+  padding: 20px 0;
+  min-height: 200px;
+  text-align: center;
+  border-radius: 15px;
+  margin:40px 40px;
+  background-color: rgba(255,255,255, 0.5);
+}
+
+.login-logo img {
+  max-width: 150px;
+}
+
+.ion-color-test {
+  --ion-color-base: rgba(212, 9, 2, 0.84)
+}
+
+.list {
+  margin-bottom: 0;
+}
+ion-content {
+  --background: none;
+  background-image: url('https://baladiyati-api.foo-apps.net/web/v1/media/image?name=8f022cd5573abf67dc6a800375ab21b1dd201c4fbc2efa4340pimgpsh-fullsize-distr.jpg');
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+ion-list{
+  background-color: transparent;
+}

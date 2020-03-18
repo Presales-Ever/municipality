@@ -4,7 +4,7 @@
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
 
-    <ion-title>تسجيل الدخول</ion-title>
+    <ion-title>LOGIN</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -14,7 +14,7 @@
     <form #loginForm="ngForm" novalidate>
       <ion-list>
         <ion-item>
-          <ion-label position="stacked" color="primary">اسم المستخدم</ion-label>
+          <ion-label position="stacked" color="primary">Username</ion-label>
           <ion-input [(ngModel)]="login.username" name="username" type="text" #username="ngModel" spellcheck="false" autocapitalize="off"
             required>
           </ion-input>
@@ -26,7 +26,7 @@
         </ion-text>
 
         <ion-item>
-          <ion-label position="stacked" color="primary">كلمة المرور</ion-label>
+          <ion-label position="stacked" color="primary">Password</ion-label>
           <ion-input [(ngModel)]="login.password" name="password" type="password" #password="ngModel" required>
           </ion-input>
         </ion-item>
@@ -40,10 +40,10 @@
 
       <ion-row>
         <ion-col>
-          <ion-button (click)="onLogin(loginForm)" color="test" type="submit" expand="block">تسجيل الدخول</ion-button>
+          <ion-button (click)="onLogin(loginForm)" color="test" type="submit" expand="block">LOGIN</ion-button>
         </ion-col>
         <ion-col>
-          <ion-button (click)="onSignup()" color="light" expand="block" >سجل</ion-button>
+          <ion-button (click)="onSignup()" color="light" expand="block" >SIGNUP</ion-button>
         </ion-col>
       </ion-row>
     </form>

@@ -1,9 +1,14 @@
 ion-fab-button {
-  --background: var(--ion-color-step-150, #fff);
+  --background: var(--ion-color-step-150, #00AE8D);
   --background-hover: var(--ion-color-step-200, #f2f2f2);
   --background-focused: var(--ion-color-step-250, #d9d9d9);
-
+  top: 3%;
+  left:80%;
+  position: absolute;
   --color: var(--ion-color-primary, #3880ff);
+}
+.ion-color-test {
+  --ion-color-base:white;
 }
 .white{
   color:white !important;

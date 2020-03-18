@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./inbox.page.scss'],
 })
 export class InboxPage implements OnInit {
-
+  defaultHref = '';
   constructor() { }
 
   ngOnInit() {

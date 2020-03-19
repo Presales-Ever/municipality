@@ -11,7 +11,7 @@
         Favorites
       </ion-segment-button>
     </ion-segment>
-    <ion-title *ngIf="!ios && !showSearchbar">نظام تفتيش رخص</ion-title>
+    <ion-title *ngIf="!ios && !showSearchbar">Inspection system</ion-title>
     <ion-searchbar *ngIf="showSearchbar" showCancelButton="always" [(ngModel)]="queryText" (ionChange)="updateSchedule()" (ionCancel)="showSearchbar = false" placeholder="Search"></ion-searchbar>
     <ion-buttons slot="end">
       <ion-button *ngIf="!ios && !showSearchbar" (click)="showSearchbar = true">
@@ -50,7 +50,7 @@
 <ion-card mode="ios" style="background-color: #0EB795;">
   <ion-card-header>
     <ion-card-title class="white">
-      إنشاء التقارير
+     Create reports
     </ion-card-title>
     <ion-card-subtitle class="white">
       <ion-fab-button class="ion-button-css">
@@ -59,14 +59,14 @@
     </ion-card-subtitle>
   </ion-card-header>
   <ion-card-content class="white">
-    إنشاء تقارير لمرة واحد أو تقارير متكررة من البيانات في جداول الإحصاءات، والتي يمكنك تنزيلها، وجدولتها، ومشاركتها مع الآخرين.
+
   </ion-card-content>
 </ion-card>
 
 <ion-card  mode="ios" style="background-color: #36A2A5;"   routerLink="/app/tabs/schedule/inbox">
   <ion-card-header>
     <ion-card-title class="white">
-     صندوق الوارد
+     Inbox
     </ion-card-title>
     <ion-card-subtitle class="white">
       <ion-fab-button class="ion-button-css">
@@ -75,14 +75,14 @@
     </ion-card-subtitle>
   </ion-card-header>
   <ion-card-content class="white">
-    إنشاء تقارير لمرة واحد أو تقارير متكررة من البيانات في جداول الإحصاءات، والتي يمكنك تنزيلها، وجدولتها، ومشاركتها مع الآخرين.
+
   </ion-card-content>
 </ion-card>
 
 <ion-card  mode="ios" style="background-color: #22ceac;">
   <ion-card-header>
     <ion-card-title class="white">
-     مهامي
+      My duties
     </ion-card-title>
     <ion-card-subtitle class="white">
       <ion-fab-button class="ion-button-css">
@@ -91,14 +91,14 @@
     </ion-card-subtitle>
   </ion-card-header>
   <ion-card-content class="white">
-    إنشاء تقارير لمرة واحد أو تقارير متكررة من البيانات في جداول الإحصاءات، والتي يمكنك تنزيلها، وجدولتها، ومشاركتها مع الآخرين.
+
   </ion-card-content>
 </ion-card>
 
 <ion-card  mode="ios" style="background-color: #1BABF2;">
   <ion-card-header>
     <ion-card-title class="white">
-     المهام المنجزة
+      Completed tasks
     </ion-card-title>
     <ion-card-subtitle class="white">
       <ion-fab-button class="ion-button-css">
@@ -107,14 +107,14 @@
     </ion-card-subtitle>
   </ion-card-header>
   <ion-card-content class="white">
-    إنشاء تقارير لمرة واحد أو تقارير متكررة من البيانات في جداول الإحصاءات، والتي يمكنك تنزيلها، وجدولتها، ومشاركتها مع الآخرين.
+
   </ion-card-content>
 </ion-card>
 
 
 
 <!-- test end -->
-  <ion-list #scheduleList [hidden]="shownSessions === 0">
+  <ion-list #scheduleList [hidden]="shownSessions === 0" style="display: none;">
     <ion-item-group *ngFor="let group of groups" [hidden]="group.hide">
       <ion-item-divider sticky>
         <ion-label>

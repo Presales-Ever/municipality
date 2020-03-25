@@ -1,0 +1,36 @@
+/* Custom Skeleton Line Height and Margin */
+.custom-skeleton ion-skeleton-text {
+  line-height: 13px;
+}
+
+.custom-skeleton ion-skeleton-text:last-child {
+  margin-bottom: 5px;
+}
+
+$categories: (
+  ionic: var(--ion-color-primary),
+  angular: #ac282b,
+  communication: #8e8d93,
+  tooling: #fe4c52,
+  services: #fd8b2d,
+  design: #fed035,
+  workshop: #69bb7b,
+  food: #3bc7c4,
+  documentation: #b16be3,
+  navigation: #6600cc
+);
+
+.titlecss{
+  font-size: 15px !important;
+  font-weight: 700;
+  color:#ac282b;
+}
+.subtitlecss{
+  font-weight: normal;
+    line-height: 1;
+    padding-top: 2%;
+    color: #999999;
+}
+h3{
+  white-space: initial;
+}

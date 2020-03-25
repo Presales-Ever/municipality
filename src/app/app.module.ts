@@ -12,6 +12,8 @@ import { AppComponent } from './app.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { FormsModule } from '@angular/forms';
+import { CitizenModule } from './citizen/citizen.module';
+import { InspectorModule } from './inspector/inspector.module';
 
 @NgModule({
   imports: [
@@ -23,7 +25,9 @@ import { FormsModule } from '@angular/forms';
     IonicStorageModule.forRoot(),
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: environment.production
-    })
+    }),
+    CitizenModule,
+    InspectorModule,
   ],
   declarations: [AppComponent],
   providers: [InAppBrowser, SplashScreen, StatusBar],

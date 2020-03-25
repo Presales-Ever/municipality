@@ -7,11 +7,14 @@
           "time": "8:00 am",
           "sessions": [
             {
-              "name": "Breakfast",
+              "name": "Residential Building",
               "timeStart": "8:00 am",
               "timeEnd": "9:00 am",
-              "location": "Dining Hall",
-              "tracks": ["Food"],
+              "location": "Hamra Sadat Street,NEAR CITY CAR,Facing LAU, 754 Beirut, Lebanon",
+              "region":"Beirut, Lebanon",
+              "notes":"There are no violations",
+              "regdate":"18-3-2020",
+              "tracks": [{"class":"food","name":"Lease registration application"},{"class":"angular"},{"class":"services"}],
               "id": "1"
             }
           ]
@@ -20,23 +23,25 @@
           "time": "9:15 am",
           "sessions": [
             {
-              "name": "Getting Started with Ionic",
-              "location": "Hall 2",
-              "description": "Mobile devices and browsers are now advanced enough that developers can build native-quality mobile apps using open web technologies like HTML5, Javascript, and CSS. In this talk, we’ll provide background on why and how we created Ionic, the design decisions made as we integrated Ionic with Angular, and the performance considerations for mobile platforms that our team had to overcome. We’ll also review new and upcoming Ionic features, and talk about the hidden powers and benefits of combining mobile app development and Angular.",
-              "speakerNames": ["Ted Turtle"],
-              "timeStart": "9:30 am",
-              "timeEnd": "9:45 am",
-              "tracks": ["Ionic"],
+              "name": "Residential Building",
+              "timeStart": "8:00 am",
+              "timeEnd": "9:00 am",
+              "location": "Hamra Makdisi Street, Hamra, 1103 Beirut, Lebanon",
+              "region":"Beirut, Lebanon",
+              "notes":"There are no violations",
+              "regdate":"15-3-2020",
+              "tracks": [{"class":"Ionic","name":"Lease registration application"},{"class":"angular"},{"class":"services"}],
               "id": "2"
             },
             {
-              "name": "Ionic Tooling",
-              "location": "Executive Ballroom",
-              "description": "Mobile devices and browsers are now advanced enough that developers can build native-quality mobile apps using open web technologies like HTML5, Javascript, and CSS. In this talk, we’ll provide background on why and how we created Ionic, the design decisions made as we integrated Ionic with Angular, and the performance considerations for mobile platforms that our team had to overcome. We’ll also review new and upcoming Ionic features, and talk about the hidden powers and benefits of combining mobile app development and Angular.",
-              "speakerNames": ["Rachel Rabbit"],
-              "timeStart": "9:45 am",
-              "timeEnd": "10:00 am",
-              "tracks": ["Tooling"],
+              "name": "Temporary advertising",
+              "timeStart": "8:00 am",
+              "timeEnd": "9:00 am",
+              "location": "Alfred Naccache Street, Achrafieh , 1042 Beirut, Lebanon",
+              "region":"Beirut, Lebanon",
+              "notes":"There are no violations",
+              "regdate":"6-2-2020",
+              "tracks": [{"class":"Tooling","name":"Lease registration application"},{"class":"angular"},{"class":"services"}],
               "id": "3"
             },
             {

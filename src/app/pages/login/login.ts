@@ -27,7 +27,11 @@ export class LoginPage {
 
     if (form.valid) {
       this.userData.login(this.login.username);
-      this.router.navigateByUrl('/app/tabs/schedule');
+      if (this.login.username == "citizen") {
+        this.router.navigateByUrl('/citizen/home');
+      } else if (this.login.username == "inspector") {
+        this.router.navigateByUrl('/inspector/home');
+      }
     }
   }
 

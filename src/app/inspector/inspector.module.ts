@@ -12,6 +12,7 @@ import { InboxComponent } from './inbox/inbox.component';
 import { MyDutiesComponent } from './my-duties/my-duties.component';
 import { DutyDetailComponent } from './duty-detail/duty-detail.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { MapComponent } from './map/map.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     InboxComponent,
     MyDutiesComponent,
     DutyDetailComponent,
-    DashboardComponent
+    DashboardComponent,
+    MapComponent
   ],
   imports: [
     CommonModule,

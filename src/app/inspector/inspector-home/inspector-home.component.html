@@ -20,7 +20,7 @@
       <ion-button *ngIf="!showSearchbar" (click)="presentFilter()">
         <span *ngIf="ios">Filter</span>
         <span *ngIf="!ios">
-          <ion-icon slot="icon-only" name="qr-code-sharp"></ion-icon>
+          <ion-icon slot="icon-only" name="log-out" [routerLink]="['/login']" routerLinkActive="router-link-active" ></ion-icon>
         </span>
       </ion-button>
     </ion-buttons>
@@ -82,7 +82,7 @@
 <ion-card  mode="ios" style="background-color: #22ceac;" routerLink="/inspector/my-duties">
   <ion-card-header>
     <ion-card-title class="white">
-      My duties
+      My Inspections
     </ion-card-title>
     <ion-card-subtitle class="white">
       <ion-fab-button class="ion-button-css">

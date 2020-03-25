@@ -1,3 +1,4 @@
+import { MapComponent } from './map/map.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { DutyDetailComponent } from './duty-detail/duty-detail.component';
 import { MyDutiesComponent } from './my-duties/my-duties.component';
@@ -17,6 +18,10 @@ const routes: Routes = [
       {
         path: 'home',
         component: InspectorHomeComponent,
+      },
+      {
+        path: 'map',
+        component: MapComponent,
       },
       {
         path: 'dashboard',

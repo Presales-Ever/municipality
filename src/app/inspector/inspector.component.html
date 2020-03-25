@@ -26,7 +26,7 @@
         <ion-menu-toggle autoHide="false" menu="citizen-menu">
           <ion-item button [routerLink]="'/inspector/calendar'" routerLinkActive="selected" routerDirection="root" detail="false">
             <ion-icon slot="start" name="calendar-outline"></ion-icon>
-            <ion-label>My Appointments</ion-label>
+            <ion-label>My Schedule</ion-label>
           </ion-item>
         </ion-menu-toggle>
 
@@ -39,8 +39,15 @@
 
         <ion-menu-toggle autoHide="false" menu="citizen-menu">
           <ion-item button [routerLink]="'/citizen/archive'" routerLinkActive="selected" routerDirection="root" detail="false">
-            <ion-icon slot="start" name="receipt-outline"></ion-icon>
-            <ion-label>Archive</ion-label>
+            <ion-icon slot="start" name="qr-code-outline"></ion-icon>
+            <ion-label>Qr Code</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+
+        <ion-menu-toggle autoHide="false" menu="citizen-menu">
+          <ion-item button [routerLink]="'/inspector/logout'" routerLinkActive="selected" routerDirection="root" detail="false">
+            <ion-icon slot="start" name="log-out-outline"></ion-icon>
+            <ion-label>Logout</ion-label>
           </ion-item>
         </ion-menu-toggle>
 

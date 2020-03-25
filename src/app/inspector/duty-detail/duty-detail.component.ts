@@ -10,11 +10,11 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./duty-detail.component.scss']
 })
 export class DutyDetailComponent {
-
+  public progress = 1;
   session: any;
   @ViewChild('scheduleList', { static: true }) scheduleList: IonList;
   isFavorite = false;
-  defaultHref = '';
+  defaultHref = '/inspector/my-duties';
   segment:string='info';
   constructor(
     private dataProvider: ConferenceData,

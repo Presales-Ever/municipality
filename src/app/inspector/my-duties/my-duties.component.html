@@ -8,11 +8,11 @@
 </ion-header>
 
 <ion-content>
-  <ion-card routerLink="/inspector/my-duties/1">
+  <ion-card>
 
-    <img src="assets/img/Prop029-ZF-7364-36278-1-001-029.jpg">
+    <img src="assets/img/Prop029-ZF-7364-36278-1-001-029.jpg" routerLink="/inspector/my-duties/1">
 
-    <ion-fab-button>
+    <ion-fab-button  [routerLink]="['/map']" routerLinkActive="router-link-active">
       <ion-icon name="location" color="test"></ion-icon>
     </ion-fab-button>
 
@@ -39,11 +39,11 @@
 
 
 
-  <ion-card routerLink="/inspector/my-duties/2">
+  <ion-card>
 
-    <img src="assets/img/reconstruction-building.jpg">
+    <img src="assets/img/reconstruction-building.jpg"  routerLink="/inspector/my-duties/2">
 
-    <ion-fab-button>
+    <ion-fab-button [routerLink]="['/map']" routerLinkActive="router-link-active">
       <ion-icon name="location" color="test"></ion-icon>
     </ion-fab-button>
 
@@ -69,11 +69,11 @@
   </ion-card>
 
 
-  <ion-card routerLink="/inspector/my-duties/3">
+  <ion-card >
 
-    <img src="assets/img/ad.jpeg">
+    <img src="assets/img/ad.jpeg" routerLink="/inspector/my-duties/3">
 
-    <ion-fab-button>
+    <ion-fab-button [routerLink]="['/map']" routerLinkActive="router-link-active">
       <ion-icon name="location" color="test"></ion-icon>
     </ion-fab-button>
 

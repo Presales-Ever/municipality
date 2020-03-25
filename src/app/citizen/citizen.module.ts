@@ -12,7 +12,8 @@ import { ArchiveComponent } from './archive/archive.component';
 import { NewRequestSelectionComponent } from './new-request-selection/new-request-selection.component';
 import { NewRequestDetailsComponent } from './new-request-details/new-request-details.component';
 import { NewRequestFormComponent } from './new-request-form/new-request-form.component';
-
+import { FormsModule } from '@angular/forms';
+import {MatStepperModule} from '@angular/material/stepper';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,9 @@ import { NewRequestFormComponent } from './new-request-form/new-request-form.com
   ],
   imports: [
     CommonModule,
+    MatStepperModule,
     CitizenRoutingModule,
+    FormsModule,
     IonicModule.forRoot(),
     IonicStorageModule.forRoot(),
   ]

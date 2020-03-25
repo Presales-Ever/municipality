@@ -37,6 +37,11 @@
               },
               {
                 "input": "src/global.scss"
+              },
+              {
+                "input":"./node_modules/filepond/dist/filepond.min.css"
+              },{
+                "input":"./node_modules/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css"
               }
             ],
             "scripts": []

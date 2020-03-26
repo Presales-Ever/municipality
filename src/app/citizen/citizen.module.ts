@@ -34,6 +34,7 @@ import {
 import { NgCalendarModule } from 'ionic2-calendar';
 import { CalendarComponentPage } from './calendar/calendar.component';
 import { RequestReviewComponent } from './request-review/request-review.component';
+import { MunicipalityCircularComponent } from './municipality-circular/municipality-circular.component';
 @NgModule({
   declarations: [
     Page2Component,
@@ -47,7 +48,8 @@ import { RequestReviewComponent } from './request-review/request-review.componen
     NewRequestFormComponent,
     RequestTimelineComponent,
     RequestReviewComponent,
-    ActiveRequestsComponent
+    ActiveRequestsComponent,
+    MunicipalityCircularComponent
   ],
   imports: [
     MatTableModule,

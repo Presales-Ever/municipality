@@ -4,6 +4,14 @@
       <ion-menu-button menu="citizen-menu"></ion-menu-button>
       <!-- <ion-back-button></ion-back-button> -->
     </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button>
+        <span *ngIf="!ios">
+          <ion-icon slot="icon-only" name="log-out" [routerLink]="['/login']" routerLinkActive="router-link-active" ></ion-icon>
+        </span>
+      </ion-button>
+    </ion-buttons>
+
     <ion-title>Create A Request</ion-title>
   </ion-toolbar>
   <ion-toolbar>

@@ -12,9 +12,23 @@ import { ArchiveComponent } from './archive/archive.component';
 import { NewRequestSelectionComponent } from './new-request-selection/new-request-selection.component';
 import { NewRequestDetailsComponent } from './new-request-details/new-request-details.component';
 import { NewRequestFormComponent } from './new-request-form/new-request-form.component';
-import { FormsModule } from '@angular/forms';
-import {MatStepperModule} from '@angular/material/stepper';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+// import filepond module
+import { FilePondModule, registerPlugin } from 'ngx-filepond';
 
+
+import {
+  MatTableModule,
+  MatStepperModule,
+  MatButtonModule,
+  MatFormFieldModule,
+  MatInputModule,
+  MatOptionModule,
+  MatSelectModule,
+  MatIconModule,
+  MatPaginatorModule,
+  MatSortModule
+} from "@angular/material";
 @NgModule({
   declarations: [
     CitizenComponent,
@@ -27,8 +41,19 @@ import {MatStepperModule} from '@angular/material/stepper';
     RequestTimelineComponent,
   ],
   imports: [
-    CommonModule,
+    MatTableModule,
     MatStepperModule,
+    MatButtonModule,
+    FilePondModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatOptionModule,
+    MatSelectModule,
+    MatIconModule,
+    MatPaginatorModule,
+    MatSortModule,
+    ReactiveFormsModule,
+    CommonModule,
     CitizenRoutingModule,
     FormsModule,
     IonicModule.forRoot(),

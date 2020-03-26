@@ -15,8 +15,9 @@ FilePond.registerPlugin(FilePondPluginImagePreview);
 })
 export class NewRequestFormComponent implements OnInit {
   userForm: FormGroup;
+  panelOpenState = false;
   @ViewChild('myPond',{static:true}) myPond: any;
-
+  defaultHref='/citizen/home';
   pondOptions = {
     class: 'my-filepond',
     multiple: true,

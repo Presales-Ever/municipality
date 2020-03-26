@@ -17,7 +17,7 @@ import { NewRequestFormComponent } from './new-request-form/new-request-form.com
 const routes: Routes = [
   {
     path: '',
-    component: CitizenHomePageComponent,
+    component: CitizenComponent,
     children:[
       {
         path: 'citizen-home',

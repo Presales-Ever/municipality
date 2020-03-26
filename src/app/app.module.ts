@@ -14,10 +14,12 @@ import { environment } from '../environments/environment';
 import { FormsModule } from '@angular/forms';
 import { CitizenModule } from './citizen/citizen.module';
 import { InspectorModule } from './inspector/inspector.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,

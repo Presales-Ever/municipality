@@ -1,3 +1,5 @@
+import { RequestReviewComponent } from './request-review/request-review.component';
+import { CalendarComponentPage } from './calendar/calendar.component';
 import { NewRequestSelectionComponent } from './new-request-selection/new-request-selection.component';
 import { RequestTimelineComponent } from './request-timeline/request-timeline.component';
 import { ArchiveComponent } from './archive/archive.component';
@@ -22,6 +24,14 @@ const routes: Routes = [
       {
         path: 'page2',
         component: CitizenPage2Component,
+      },
+      {
+        path: 'request-review',
+        component: RequestReviewComponent,
+      },
+      {
+        path: 'calendar',
+        component: CalendarComponentPage,
       },
       {
         path: 'archive',

@@ -1,8 +1,13 @@
-import { Page2Component } from './page2/page2.component';
+import { MapComponent } from './map/map.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { DutyDetailComponent } from './duty-detail/duty-detail.component';
+import { MyDutiesComponent } from './my-duties/my-duties.component';
+import { InboxComponent } from './inbox/inbox.component';
 import { InspectorHomeComponent } from './inspector-home/inspector-home.component';
 import { InspectorComponent } from './inspector.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { CalendarComponentPage } from './calendar/calendar.component';
 
 
 const routes: Routes = [
@@ -15,8 +20,28 @@ const routes: Routes = [
         component: InspectorHomeComponent,
       },
       {
-        path: 'page2',
-        component: Page2Component,
+        path: 'map',
+        component: MapComponent,
+      },
+      {
+        path: 'dashboard',
+        component: DashboardComponent,
+      },
+      {
+        path: 'my-duties',
+        component: MyDutiesComponent,
+      },
+      {
+        path: 'my-duties/:dutyId',
+        component: DutyDetailComponent,
+      },
+      {
+        path: 'calendar',
+        component: CalendarComponentPage,
+      },
+      {
+        path: 'inbox',
+        component: InboxComponent,
       }
     ]
   }

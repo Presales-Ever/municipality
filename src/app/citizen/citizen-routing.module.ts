@@ -1,7 +1,6 @@
 import { NewRequestSelectionComponent } from './new-request-selection/new-request-selection.component';
 import { RequestTimelineComponent } from './request-timeline/request-timeline.component';
 import { ArchiveComponent } from './archive/archive.component';
-import { ActiveRequestsComponent } from './active-requests/active-requests.component';
 import { CitizenPage2Component } from './citizen-page-2/citizen-page-2.component';
 import { HomeComponent } from './home/home.component';
 import { CitizenComponent } from './citizen.component';
@@ -23,10 +22,6 @@ const routes: Routes = [
       {
         path: 'page2',
         component: CitizenPage2Component,
-      },
-      {
-        path: 'active-requests',
-        component: ActiveRequestsComponent,
       },
       {
         path: 'archive',

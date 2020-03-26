@@ -1,10 +1,8 @@
-import { MatStepperModule } from '@angular/material/stepper';
 import { RequestTimelineComponent } from './request-timeline/request-timeline.component';
 import { CitizenPage2Component } from './citizen-page-2/citizen-page-2.component';
 import { CitizenComponent } from './citizen.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MatFormFieldModule } from '@angular/material/form-field';
 import { CitizenRoutingModule } from './citizen-routing.module';
 import { IonicModule } from '@ionic/angular';
 import { IonicStorageModule } from '@ionic/storage';
@@ -14,11 +12,22 @@ import { NewRequestSelectionComponent } from './new-request-selection/new-reques
 import { NewRequestDetailsComponent } from './new-request-details/new-request-details.component';
 import { NewRequestFormComponent } from './new-request-form/new-request-form.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { MatInputModule } from '@angular/material';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { BrowserModule } from '@angular/platform-browser';
+// import filepond module
+import { FilePondModule, registerPlugin } from 'ngx-filepond';
 
 
+import {
+  MatTableModule,
+  MatStepperModule,
+  MatButtonModule,
+  MatFormFieldModule,
+  MatInputModule,
+  MatOptionModule,
+  MatSelectModule,
+  MatIconModule,
+  MatPaginatorModule,
+  MatSortModule
+} from "@angular/material";
 @NgModule({
   declarations: [
     CitizenComponent,
@@ -31,16 +40,19 @@ import { BrowserModule } from '@angular/platform-browser';
     RequestTimelineComponent,
   ],
   imports: [
-    // BrowserModule,
-    // BrowserAnimationsModule,
-    // CommonModule,
-    // BrowserAnimationsModule,
-    // BrowserModule,
-    CommonModule,
-
-    MatInputModule,
+    MatTableModule,
     MatStepperModule,
+    MatButtonModule,
+    FilePondModule,
     MatFormFieldModule,
+    MatInputModule,
+    MatOptionModule,
+    MatSelectModule,
+    MatIconModule,
+    MatPaginatorModule,
+    MatSortModule,
+    ReactiveFormsModule,
+    CommonModule,
     CitizenRoutingModule,
     FormsModule,
     ReactiveFormsModule,

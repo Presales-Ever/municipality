@@ -1,26 +1,61 @@
-import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { FormGroup, Validators, FormBuilder } from '@angular/forms';
+// Import FilePond
+import * as FilePond from 'filepond';
 
+// Import the plugin code
+import FilePondPluginImagePreview from 'filepond-plugin-image-preview';
+
+// Register the plugin
+FilePond.registerPlugin(FilePondPluginImagePreview);
 @Component({
   selector: 'app-new-request-form',
   templateUrl: './new-request-form.component.html',
   styleUrls: ['./new-request-form.component.scss'],
 })
 export class NewRequestFormComponent implements OnInit {
+  userForm: FormGroup;
+  @ViewChild('myPond',{static:true}) myPond: any;
 
-  isLinear = false;
-  firstFormGroup: FormGroup;
-  secondFormGroup: FormGroup;
+  pondOptions = {
+    class: 'my-filepond',
+    multiple: true,
+    labelIdle: 'Drop files here',
+    acceptedFileTypes: 'image/jpeg, image/png'
+  }
 
-  constructor(private _formBuilder: FormBuilder) {}
+  pondFiles = [
+  ]
+
+  constructor(private fb: FormBuilder) { }
 
   ngOnInit() {
-    this.firstFormGroup = this._formBuilder.group({
-      firstCtrl: ['', Validators.required]
+    this.userForm = this.fb.group({
+      name: ['', Validators.required],
+      address: ['', Validators.required]
     });
-    this.secondFormGroup = this._formBuilder.group({
-      secondCtrl: ['', Validators.required]
-    });
+    this.loadScripts()
+  }
+  pondHandleInit() {
+    console.log('FilePond has initialised', this.myPond);
+  }
+  loadScripts() {
+    const externalScriptArray = [
+      "../../assets/js/credit-card.js",
+      "https://cdnjs.cloudflare.com/ajax/libs/imask/3.4.0/imask.min.js"
+    ];
+    for (let i = 0; i < externalScriptArray.length; i++) {
+      const scriptTag = document.createElement("script");
+      scriptTag.src = externalScriptArray[i];
+      scriptTag.type = "text/javascript";
+      scriptTag.async = false;
+      scriptTag.charset = "utf-8";
+      document.getElementsByTagName("head")[0].appendChild(scriptTag);
+    }
+  }
+
+  pondHandleAddFile(event: any) {
+    console.log('A file was added', event);
   }
 
 

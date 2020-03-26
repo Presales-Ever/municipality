@@ -28,7 +28,7 @@ export class LoginPage {
     if (form.valid) {
       this.userData.login(this.login.username);
       if (this.login.username == "citizen") {
-        this.router.navigateByUrl('/citizen/home');
+        this.router.navigateByUrl('/citizen/citizen-home');
       } else if (this.login.username == "inspector") {
         this.router.navigateByUrl('/inspector/home');
       }

@@ -1,3 +1,4 @@
+import { CitizenHomePageComponent } from './citizen-home-page/citizen-home-page.component';
 import { MunicipalityCircularComponent } from './municipality-circular/municipality-circular.component';
 import { RequestReviewComponent } from './request-review/request-review.component';
 import { CalendarComponentPage } from './calendar/calendar.component';
@@ -16,8 +17,12 @@ import { NewRequestFormComponent } from './new-request-form/new-request-form.com
 const routes: Routes = [
   {
     path: '',
-    component: CitizenComponent,
+    component: CitizenHomePageComponent,
     children:[
+      {
+        path: 'citizen-home',
+        component: CitizenHomePageComponent,
+      },
       {
         path: 'home',
         component: HomeComponent,

@@ -1,9 +1,10 @@
+import { Page2Component } from './../inspector/page2/page2.component';
+import { ActiveRequestsComponent } from './active-requests/active-requests.component';
 import { RequestTimelineComponent } from './request-timeline/request-timeline.component';
 import { CitizenPage2Component } from './citizen-page-2/citizen-page-2.component';
 import { CitizenComponent } from './citizen.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
 import { CitizenRoutingModule } from './citizen-routing.module';
 import { IonicModule } from '@ionic/angular';
 import { IonicStorageModule } from '@ionic/storage';
@@ -35,6 +36,7 @@ import { CalendarComponentPage } from './calendar/calendar.component';
 import { RequestReviewComponent } from './request-review/request-review.component';
 @NgModule({
   declarations: [
+    Page2Component,
     CitizenComponent,
     HomeComponent,
     CalendarComponentPage,
@@ -45,6 +47,7 @@ import { RequestReviewComponent } from './request-review/request-review.componen
     NewRequestFormComponent,
     RequestTimelineComponent,
     RequestReviewComponent,
+    ActiveRequestsComponent
   ],
   imports: [
     MatTableModule,
@@ -64,6 +67,7 @@ import { RequestReviewComponent } from './request-review/request-review.componen
     CommonModule,
     CitizenRoutingModule,
     FormsModule,
+    ReactiveFormsModule,
     IonicModule.forRoot(),
     IonicStorageModule.forRoot(),
   ]

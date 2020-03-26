@@ -5,6 +5,13 @@ import * as FilePond from 'filepond';
 
 // Import the plugin code
 import FilePondPluginImagePreview from 'filepond-plugin-image-preview';
+import { reduce } from 'rxjs/operators';
+declare global {
+  interface Window {
+    initCredit;
+  }
+}
+
 
 // Register the plugin
 FilePond.registerPlugin(FilePondPluginImagePreview);
@@ -16,8 +23,8 @@ FilePond.registerPlugin(FilePondPluginImagePreview);
 export class NewRequestFormComponent implements OnInit {
   userForm: FormGroup;
   panelOpenState = false;
-  @ViewChild('myPond',{static:true}) myPond: any;
-  defaultHref='/citizen/home';
+  @ViewChild('myPond', { static: true }) myPond: any;
+  defaultHref = '/citizen/home';
   pondOptions = {
     class: 'my-filepond',
     multiple: true,
@@ -35,11 +42,29 @@ export class NewRequestFormComponent implements OnInit {
       name: ['', Validators.required],
       address: ['', Validators.required]
     });
-    this.loadScripts()
+  }
+  ngAfterViewInit(): void {
+    // this.loadScripts()
+    this.loadScript("./assets/js/credit.js")
+    this.loadScript("https://cdnjs.cloudflare.com/ajax/libs/imask/3.4.0/imask.min.js")
+    setTimeout(() => {
+      window.initCredit()
+    }, 200);
   }
   pondHandleInit() {
     console.log('FilePond has initialised', this.myPond);
   }
+
+  loadScript(url: string) {
+    const body = <HTMLDivElement>document.body;
+    const script = document.createElement('script');
+    script.innerHTML = '';
+    script.src = url;
+    script.async = false;
+    script.defer = true;
+    body.appendChild(script);
+  }
+
   loadScripts() {
     const externalScriptArray = [
       "./assets/js/credit-card.js",

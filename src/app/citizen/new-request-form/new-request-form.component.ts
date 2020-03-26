@@ -42,7 +42,7 @@ export class NewRequestFormComponent implements OnInit {
   }
   loadScripts() {
     const externalScriptArray = [
-      "../../assets/js/credit-card.js",
+      "./assets/js/credit-card.js",
       "https://cdnjs.cloudflare.com/ajax/libs/imask/3.4.0/imask.min.js"
     ];
     for (let i = 0; i < externalScriptArray.length; i++) {

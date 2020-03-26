@@ -19,6 +19,7 @@ import { FilePondModule, registerPlugin } from 'ngx-filepond';
 import {
   MatTableModule,
   MatStepperModule,
+  MatExpansionModule,
   MatButtonModule,
   MatFormFieldModule,
   MatInputModule,
@@ -28,21 +29,28 @@ import {
   MatPaginatorModule,
   MatSortModule
 } from "@angular/material";
+import { NgCalendarModule } from 'ionic2-calendar';
+import { CalendarComponentPage } from './calendar/calendar.component';
+import { RequestReviewComponent } from './request-review/request-review.component';
 @NgModule({
   declarations: [
     CitizenComponent,
     HomeComponent,
+    CalendarComponentPage,
     CitizenPage2Component,
     ArchiveComponent,
     NewRequestSelectionComponent,
     NewRequestDetailsComponent,
     NewRequestFormComponent,
     RequestTimelineComponent,
+    RequestReviewComponent,
   ],
   imports: [
     MatTableModule,
+    MatExpansionModule,
     MatStepperModule,
     MatButtonModule,
+    NgCalendarModule,
     FilePondModule,
     MatFormFieldModule,
     MatInputModule,

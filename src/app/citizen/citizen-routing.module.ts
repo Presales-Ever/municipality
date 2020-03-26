@@ -1,3 +1,4 @@
+import { MunicipalityCircularComponent } from './municipality-circular/municipality-circular.component';
 import { RequestReviewComponent } from './request-review/request-review.component';
 import { CalendarComponentPage } from './calendar/calendar.component';
 import { NewRequestSelectionComponent } from './new-request-selection/new-request-selection.component';
@@ -24,6 +25,10 @@ const routes: Routes = [
       {
         path: 'page2',
         component: CitizenPage2Component,
+      },
+      {
+        path: 'municipality-circular',
+        component: MunicipalityCircularComponent,
       },
       {
         path: 'request-review',

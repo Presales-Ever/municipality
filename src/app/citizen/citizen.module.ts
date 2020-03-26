@@ -49,7 +49,7 @@ import { MunicipalityCircularComponent } from './municipality-circular/municipal
     RequestTimelineComponent,
     RequestReviewComponent,
     ActiveRequestsComponent,
-    MunicipalityCircularComponent
+    MunicipalityCircularComponent,
   ],
   imports: [
     MatTableModule,

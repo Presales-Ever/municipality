@@ -1,3 +1,4 @@
+import { ScheduleFilterPage } from './../pages/schedule-filter/schedule-filter';
 import { InspectorHomeComponent } from './inspector-home/inspector-home.component';
 import { InspectorComponent } from './inspector.component';
 import { NgModule } from '@angular/core';
@@ -23,6 +24,7 @@ import { MapComponent } from './map/map.component';
     InboxComponent,
     MyDutiesComponent,
     DutyDetailComponent,
+    ScheduleFilterPage,
     DashboardComponent,
     MapComponent
   ],
@@ -33,6 +35,10 @@ import { MapComponent } from './map/map.component';
     InspectorRoutingModule,
     IonicModule.forRoot(),
     IonicStorageModule.forRoot(),
+  ],
+  entryComponents: [
+    ScheduleFilterPage
+
   ]
 })
 export class InspectorModule { }

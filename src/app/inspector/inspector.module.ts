@@ -24,7 +24,6 @@ import { MapComponent } from './map/map.component';
     InboxComponent,
     MyDutiesComponent,
     DutyDetailComponent,
-    ScheduleFilterPage,
     DashboardComponent,
     MapComponent
   ],
@@ -35,10 +34,6 @@ import { MapComponent } from './map/map.component';
     InspectorRoutingModule,
     IonicModule.forRoot(),
     IonicStorageModule.forRoot(),
-  ],
-  entryComponents: [
-    ScheduleFilterPage
-
   ]
 })
 export class InspectorModule { }

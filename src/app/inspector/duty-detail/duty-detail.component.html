@@ -181,7 +181,15 @@
   </ion-list>
   <div class="ion-padding"  *ngIf="segment=='submission'">
  <ion-text>Progress Bar</ion-text>
-  <ion-progress-bar value=".5" style="margin-top:3%"  buffer=".5"></ion-progress-bar>
+  <ion-progress-bar value=".8" style="margin-top:3%"  buffer=".5"></ion-progress-bar>
+  <ion-item lines="none">
+  <div slot="end">
+  <ion-button [routerLink]="['/inspector/my-duties']" routerLinkActive="router-link-active" >
+    Send
+    <ion-icon name="navigate-outline"></ion-icon>
+  </ion-button>
+  </div>
+</ion-item>
   </div>
 
 </ion-content>

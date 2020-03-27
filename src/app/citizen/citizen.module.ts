@@ -35,11 +35,14 @@ import { NgCalendarModule } from 'ionic2-calendar';
 import { CalendarComponentPage } from './calendar/calendar.component';
 import { RequestReviewComponent } from './request-review/request-review.component';
 import { MunicipalityCircularComponent } from './municipality-circular/municipality-circular.component';
+import { CitizenHomePageComponent } from './citizen-home-page/citizen-home-page.component';
+import { PreloadImageComponent } from './preload-image/preload-image.component';
 @NgModule({
   declarations: [
     Page2Component,
     CitizenComponent,
     HomeComponent,
+    PreloadImageComponent,
     CalendarComponentPage,
     CitizenPage2Component,
     ArchiveComponent,
@@ -50,6 +53,7 @@ import { MunicipalityCircularComponent } from './municipality-circular/municipal
     RequestReviewComponent,
     ActiveRequestsComponent,
     MunicipalityCircularComponent,
+    CitizenHomePageComponent
   ],
   imports: [
     MatTableModule,
@@ -72,6 +76,9 @@ import { MunicipalityCircularComponent } from './municipality-circular/municipal
     ReactiveFormsModule,
     IonicModule.forRoot(),
     IonicStorageModule.forRoot(),
-  ]
+  ],
+  exports: [
+    PreloadImageComponent
+  ],
 })
 export class CitizenModule { }

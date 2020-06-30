@@ -1,0 +1,1 @@
+{"plugins":["cordova-base64-to-gallery","cordova-plugin-camera","cordova-plugin-device","cordova-plugin-inappbrowser","cordova-plugin-splashscreen","cordova-plugin-whitelist","cordova-plugin-ionic-webview","cordova-plugin-statusbar","cordova-plugin-ionic-keyboard","cordova-plugin-file"]}

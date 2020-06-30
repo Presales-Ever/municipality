@@ -51,6 +51,13 @@
           </ion-item>
         </ion-menu-toggle>
 
+        <ion-menu-toggle autoHide="false" menu="citizen-menu">
+          <ion-item button [routerLink]="'/citizen/page2'" routerLinkActive="selected" routerDirection="root" detail="false">
+            <ion-icon slot="start" name="albums-outline"></ion-icon>
+            <ion-label>Draw</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+
       </ion-list>
 
     </ion-content>

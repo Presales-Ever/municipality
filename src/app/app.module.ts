@@ -14,7 +14,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CitizenModule } from './citizen/citizen.module';
 import { InspectorModule } from './inspector/inspector.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { Base64ToGallery } from '@ionic-native/base64-to-gallery/ngx';
+import { Camera } from '@ionic-native/Camera/ngx';
+import { File } from '@ionic-native/file/ngx';
 
 @NgModule({
   imports: [
@@ -36,7 +38,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
   ],
   declarations: [AppComponent],
-  providers: [InAppBrowser, SplashScreen, StatusBar],
+  providers: [InAppBrowser, SplashScreen, StatusBar,Base64ToGallery,Camera,File],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

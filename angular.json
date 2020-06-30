@@ -44,7 +44,9 @@
                 "input":"./node_modules/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css"
               }
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/jquery/dist/jquery.min.js"
+            ]
           },
           "configurations": {
             "production": {

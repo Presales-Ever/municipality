@@ -1,3 +1,4 @@
+import { PinMapComponent } from './pin-map/pin-map.component';
 import { MapComponent } from './map/map.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { DutyDetailComponent } from './duty-detail/duty-detail.component';
@@ -8,6 +9,7 @@ import { InspectorComponent } from './inspector.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { CalendarComponentPage } from './calendar/calendar.component';
+import { PinsComponent } from './pins/pins.component';
 
 
 const routes: Routes = [
@@ -38,6 +40,14 @@ const routes: Routes = [
       {
         path: 'calendar',
         component: CalendarComponentPage,
+      },
+      {
+        path: 'pins',
+        component: PinsComponent,
+      },
+      {
+        path: 'pin-map',
+        component: PinMapComponent,
       },
       {
         path: 'inbox',

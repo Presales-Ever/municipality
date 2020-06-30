@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button [defaultHref]="defaultHref"></ion-back-button>
+      <!-- <ion-back-button></ion-back-button> -->
+    </ion-buttons>
+
+    <ion-title>Map</ion-title>
+  </ion-toolbar>
+  <ion-toolbar>
+    <ion-button style="padding-left: 5px;font-size: 12px" [routerLink]="['/inspector/my-duties/1']" routerLinkActive="router-link-active">
+      Accept
+      <ion-icon name="checkmark-outline" style="padding-left: 10px;"></ion-icon>
+    </ion-button>
+    <ion-button style="font-size: 12px;" >
+      Reject
+      <ion-icon name="close-outline" style="padding-left: 10px;"></ion-icon>
+    </ion-button>
+    <ion-button [routerLink]="['/inspector/pins']" routerLinkActive="router-link-active" style="font-size: 12px;" >
+      Add a note
+      <ion-icon name="location-outline" style="padding-left: 10px;"></ion-icon>
+    </ion-button>
+</ion-toolbar>
+</ion-header>
+
+<ion-content [forceOverscroll]="false">
+<div class="ion-padding">
+  <ion-fab-button class="example-box" cdkDrag>
+    <ion-icon name="location" class="iconcolor"></ion-icon>
+  </ion-fab-button>
+<img src="assets/img/img-pin.jpg" width="100%" height="500px" style="margin-top: -65px;">
+
+</div>
+
+
+</ion-content>

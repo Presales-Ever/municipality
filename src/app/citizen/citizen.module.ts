@@ -17,7 +17,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 // import filepond module
 import { FilePondModule, registerPlugin } from 'ngx-filepond';
 
-
 import {
   MatTableModule,
   MatStepperModule,

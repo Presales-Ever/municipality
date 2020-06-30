@@ -5,15 +5,17 @@ import { Camera, CameraOptions, PictureSourceType } from '@ionic-native/Camera/n
 import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
 import { File } from '@ionic-native/file/ngx';
 
+
 @Component({
-  selector: 'app-citizen-page-2',
-  templateUrl: './citizen-page-2.component.html',
-  styleUrls: ['./citizen-page-2.component.css']
+  selector: 'app-pins',
+  templateUrl: './pins.component.html',
+  styleUrls: ['./pins.component.scss']
 })
-export class CitizenPage2Component {
+export class PinsComponent{
   @ViewChild('imageCanvas', { static: false }) canvas: any;
   canvasElement: any;
   saveX: number;
+  defaultHref='/inspector/pin-map'
   trustedDashboardUrl : SafeUrl;
   saveY: number;
 
@@ -29,7 +31,7 @@ export class CitizenPage2Component {
     // Set the Canvas Element and its size
     this.canvasElement = this.canvas.nativeElement;
     this.canvasElement.width = this.plt.width() + '';
-    this.canvasElement.height = 400;
+    this.canvasElement.height = 280;
   }
 
   startDrawing(ev) {
@@ -186,4 +188,5 @@ export class CitizenPage2Component {
 		});
 
 }
+
 }
